@@ -1,0 +1,1 @@
+web: python mange.py migrate && gunicorn Tesis.wgsi
