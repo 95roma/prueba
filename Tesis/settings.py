@@ -98,7 +98,7 @@ WSGI_APPLICATION = 'Tesis.wsgi.application'
 
 DATABASES = mysql.connector.connect(
         host = "viaduct.proxy.rlwy.net",
-        user = "roo ",
+        user = "root",
         password =  "FBf5a6G43Ba21hc23gc3fhd24d6GEh15",
         
 ) #{
