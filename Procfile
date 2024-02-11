@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn Tesis.wgsi
+web: python manage.py migrate && gunicorn Tesis.wsgi
