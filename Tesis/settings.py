@@ -100,6 +100,7 @@ DATABASES = mysql.connector.connect(
         host = "viaduct.proxy.rlwy.net",
         user = "root",
         password =  "FBf5a6G43Ba21hc23gc3fhd24d6GEh15",
+        port = "56701"
         
 ) #{
  #   'default': {
