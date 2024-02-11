@@ -97,14 +97,12 @@ WSGI_APPLICATION = 'Tesis.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'RR',
-        'USER':'',
-        'PASSWORD':'',
-        'HOST':'DESKTOP-IPDC9ED\SQLEXPRESS',
-        'OPTIONS':{
-            'driver': 'ODBC Driver 13 for SQL Server',
-        },
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'railway',
+        'USER':'root',
+        'PASSWORD':'FBf5a6G43Ba21hc23gc3fhd24d6GEh15',
+        'HOST':'viaduct.proxy.rlwy.net',
+        'PORT':"56701",
 
     }
 }
