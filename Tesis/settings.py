@@ -98,11 +98,13 @@ WSGI_APPLICATION = 'Tesis.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        'NAME': 'railway',
-        'USER':'postgres',
-        'PASSWORD':'-g*Dge*gD3gGbBb6eFe*B4GC*-c2eBfD',
-        'HOST':'roundhouse.proxy.rlwy.net',
-        'PORT':"34874",
+        "OPTIONS": {
+            'dbname': 'railway',
+            'user':'postgres',
+            'password':'-g*Dge*gD3gGbBb6eFe*B4GC*-c2eBfD',
+            'host':'roundhouse.proxy.rlwy.net',
+            'port':"34874",
+        },
     }
 }
 
