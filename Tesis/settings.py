@@ -96,24 +96,16 @@ WSGI_APPLICATION = 'Tesis.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = mysql.connector.connect(
-        host = "viaduct.proxy.rlwy.net",
-        user = "root",
-        password =  "FBf5a6G43Ba21hc23gc3fhd24d6GEh15",
-        port = "56701"
-        
-) #{
- #   'default': {
-  #      'ENGINE': '',
-  #      'NAME': 'railway',
-   #     'USER':'root',
-   #     'PASSWORD':'FBf5a6G43Ba21hc23gc3fhd24d6GEh15',
-   #     'HOST':'viaduct.proxy.rlwy.net',
-   #     'PORT':"56701",
-
-   # }
-#}
-
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        'NAME': 'railway',
+        'USER':'root',
+        'PASSWORD':'FBf5a6G43Ba21hc23gc3fhd24d6GEh15',
+        'HOST':'viaduct.proxy.rlwy.net',
+        'PORT':"56701",
+    }
+}
 
 
 # Password validation
