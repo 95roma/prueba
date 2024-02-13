@@ -99,11 +99,8 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
         "OPTIONS": {
-            'name': 'railway',
-            'user':'postgres',
-            'password':'-g*Dge*gD3gGbBb6eFe*B4GC*-c2eBfD',
-            'host':'roundhouse.proxy.rlwy.net',
-            'port':"34874",
+            "service": "my_service",
+            "passfile": ".my_pgpass",
         },
     }
 }
