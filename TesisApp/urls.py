@@ -8,8 +8,8 @@ from ClienteApp import views as viewsc
 urlpatterns = [
     
      path('',login_required(views.home), name="home"),
-     #urls de acceso
-     path('accounts/login/', Login.as_view(), name='login'),
+     #urls de acceso accounts/
+     path('login/', Login.as_view(), name='login'),
      path('logout/', login_required(logoutUsuario), name='logout' ),
      path('reset/password/', ResetPasswordView.as_view(), name='reset_password' ),
      path('change/password/<str:token>/', ChangePasswordView.as_view(), name='change_password' ),
