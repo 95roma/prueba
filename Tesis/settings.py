@@ -29,10 +29,10 @@ ALLOWED_HOSTS = ['*']
 
 MESSAGE_STORAGE="django.contrib.messages.storage.cookie.CookieStorage"
 # Application definition
-
+LOGIN_URL = '/accounts/login/'
 INSTALLED_APPS = [
     'django.contrib.admin',
-    'django.contrib.auth',
+    'django.contrib.auth',  
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
