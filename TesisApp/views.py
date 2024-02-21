@@ -93,7 +93,7 @@ def insertar(request):
 
 
 class Login(FormView):
-    template_name='TesisApp/login.html'
+    template_name='../../TesisApp/login.html'
     form_class = FormularioLogin
     success_url = reverse_lazy('home')
    
