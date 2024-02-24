@@ -79,7 +79,7 @@ ROOT_URLCONF = 'Tesis.urls'
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / "Templates"],
+        "DIRS": [BASE_DIR / "Tesis"],
         "APP_DIRS": True,
         'OPTIONS': {
             'context_processors': [
