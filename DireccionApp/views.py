@@ -9,7 +9,7 @@ from django.http import JsonResponse
 from TesisApp.views import registroBit
 # Create your views here.
 def depto(request):
-    return render(request, "../DireccionApp/depto.html")
+    return render(request, "DireccionApp/depto.html")
 def registrarDepto(request):
     nombre_depto=request.POST['nombre_depto'].upper()
     consulta=Departamento.objects.filter(NombreDepa=nombre_depto).exists()
