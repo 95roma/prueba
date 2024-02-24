@@ -78,8 +78,8 @@ ROOT_URLCONF = 'Tesis.urls'
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        'DIRS': ['/app/TesisApp/TemplatesTesisApp/',
-                 '/app/DireccionApp/TemplatesDireccionApp/',],
+        'DIRS': ['/app/TesisApp/Templates/',
+                 '/app/DireccionApp/Templates/',],
        # 'DIRS': [os.path.join(BASE_DIR, 'DireccionApp','Templates')],
         "APP_DIRS": True,
         'OPTIONS': {
