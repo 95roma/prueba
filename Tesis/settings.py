@@ -30,7 +30,6 @@ ALLOWED_HOSTS = ['*']
 
 MESSAGE_STORAGE="django.contrib.messages.storage.cookie.CookieStorage"
 # Application definition
-LOGIN_URL = '/accounts/login/'
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',  
@@ -79,7 +78,8 @@ ROOT_URLCONF = 'Tesis.urls'
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': ['/app/TesisApp/TemplatesTesisApp/',
+                 '/app/DireccionApp/TemplatesDireccionApp/',],
        # 'DIRS': [os.path.join(BASE_DIR, 'DireccionApp','Templates')],
         "APP_DIRS": True,
         'OPTIONS': {
