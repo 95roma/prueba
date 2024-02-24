@@ -6,13 +6,13 @@ from django.contrib.auth.decorators import login_required
 urlpatterns = [
     #login_required()
      path('',views.depto, name="depto"),
-     path('',views.registrarDepto), 
+     path('registrarDepto/',views.registrarDepto), 
      path('listarDepto',views.listarDepto, name="listarDepto"),
      path('modiDepto/<id>', views.modiDepto),
      path('editDepto/',views.editDepto),
 
      #Para Municipios
-     path('',views.muni, name="muni"),
+     path('muni',views.muni, name="muni"),
      path('registrarMuni/',views.registrarMuni), 
      path('listarMuni',views.listarMuni, name="listarMuni"),
      path('modiMuni/<idmuni>', views.modiMuni),
