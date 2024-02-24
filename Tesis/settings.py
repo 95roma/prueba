@@ -58,7 +58,7 @@ INSTALLED_APPS = [
     'InspeccionMejViviendaApp',
     'EvaluacionIvEFApp',
     'EvaluacionMicroApp',
-    'ListaChequeoApp'
+    'ListaChequeoApp',
     
 ]
 
@@ -72,7 +72,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django_session_timeout.middleware.SessionTimeoutMiddleware',
     "whitenoise.middleware.WhiteNoiseMiddleware",
-    'playground.apps.PlaygroundConfig', #Add this line, this allow Django to search in this app location for the template folder.
 ]
 
 ROOT_URLCONF = 'Tesis.urls'
