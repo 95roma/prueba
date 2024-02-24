@@ -72,6 +72,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django_session_timeout.middleware.SessionTimeoutMiddleware',
     "whitenoise.middleware.WhiteNoiseMiddleware",
+    'playground.apps.PlaygroundConfig' #Add this line, this allow Django to search in this app location for the template folder.
 ]
 
 ROOT_URLCONF = 'Tesis.urls'
@@ -79,7 +80,7 @@ ROOT_URLCONF = 'Tesis.urls'
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        'DIRS': [os.path.join(BASE_DIR, 'Templates','DireccionApp')],
+        'DIRS': [os.path.join(BASE_DIR, 'Templates')],
        # 'DIRS': [os.path.join(BASE_DIR, 'DireccionApp','Templates')],
         "APP_DIRS": True,
         'OPTIONS': {
