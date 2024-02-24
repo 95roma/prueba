@@ -80,7 +80,7 @@ TEMPLATES = [
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         'DIRS': ['/app/TesisApp/Templates/',
                  '/app/DireccionApp/Templates/',
-                 'ClienteApp',
+                 '/app/ClienteApp/Templates/',
     '/app/ConfiguracionApp/Templates/',
     '/app/SolicitudesApp/Templates/',
     '/app/ConozcaClienteApp/Templates/',
